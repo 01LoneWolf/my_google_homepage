@@ -3,5 +3,6 @@ Project "my_google_homepage" is the first project on TheOdinProject. In this pro
 - Use the tips listed in the lesson.
 - Use google.co.uk as an example page.
 - Don't forget to push the project once done!
+- Also don't forget about hovers and other details on the page.
 
 - After this project is done, I should also do the optional, more difficult version in the lesson - Google search results project.
