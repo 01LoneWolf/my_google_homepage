@@ -4,40 +4,120 @@
     font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+
 }
 
-.footer{
-    background-color: #f2f2f2;
-    border-top: 1px solid #dadce0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+body{
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #222;
 }
 
-.footer>.bottom-left{
-    float:left;
-    padding-left: 20px;
+a{
+    cursor: pointer;
 }
 
-.footer>.bottom-right{
-    float:right;
-    padding-right: 20px;
-}
-
-.footer>div>ul {
+ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
 }
 
-.footer>div>ul>li>a {
+li{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header>ul{
+    padding-left: 32px;
+    padding-right: 4px;
+}
+
+.apps{
+    padding: 8px;
+    display: inline-block;
+    margin: auto;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.apps:hover{
+    background-color: #eef0f0;
+}
+
+.apps:active{
+    background-color: #ebebec;
+}
+
+.apps-wrap{
+    padding: 4px;
+}
+
+.sign-in{
+    text-decoration: none;
+    color:white;
+    padding: 9px 23px;
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    margin: 0 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.sign-in:hover{
+    background-color: #2b7de9;
+}
+
+.sign-in:active{
+    background-color: #63a0ef;
+}
+
+.link{
     text-decoration: none;
     color: #70757a;
     padding: 15px;
     display: inline-block;
 }
 
-.footer>div>ul>li>a:hover {
+.link:hover{
     text-decoration: underline;
     text-decoration-thickness: 1px;
+}
+
+.top-link{
+    padding: 0;
+    padding-left: 15px;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+}
+
+.top-link:last-child{
+    padding-right: 15px;
+}
+
+.footer{
+    background-color: #f2f2f2;
+    border-top: 1px solid #dadce0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom-left{
+    justify-self: flex-start;
+    padding-left: 20px;
+}
+
+.bottom-right{
+    margin-left: auto;
+    padding-right: 20px;
 }
